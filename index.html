@@ -16,11 +16,30 @@
         $(document).ready(function() {
             var helper = new Helper();
 
-            var objectAddExample = helper.objectAdd({ 'name' : 'desk' }, 'price', '100');
+            // var objectAddExample = helper.objectAdd({ 'name' : 'desk' }, 'price', '100');
             // console.log(objectAddExample);
+            //
+            // var arrayCollapse = helper.arrayCollapse([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+            // console.log(arrayCollapse);
 
-            var arrayCollapse = helper.arrayCollapse([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
-            console.log(arrayCollapse);
+            // var objectDevide = helper.objectDevide({ 'name' : 'desk' });
+            // console.log(objectDevide);
+
+            // var objectKeys = helper.objectKeys({ 'name' : 'desk' });
+            // console.log(objectKeys);
+
+            // var objectValues = helper.objectValues({ 'name' : 'desk' });
+            // console.log(objectValues);
+
+            var objectDot = helper.objectDot({
+                product : {
+                    desk : {
+                        price : 180
+                    }
+                }
+            });
+            
+            console.log(objectDot);
         });
     </script>
 </body>
